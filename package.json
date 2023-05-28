@@ -1,0 +1,46 @@
+{
+  "name": "portfolionodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node build/server/index.js\"",
+    "build": "npx tsc",
+    "db:migrate": "npx prisma migrate dev",
+    "reset": "npx prisma migrate reset --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imranoso734/portfolio-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Imranoso734/portfolio-nodejs/issues"
+  },
+  "homepage": "https://github.com/Imranoso734/portfolio-nodejs#readme",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@types/tap": "^15.0.6",
+    "prisma": "^4.14.1",
+    "sinon": "^13.0.1",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^6.0.0-beta.0",
+    "@fastify/swagger": "^8.5.1",
+    "@prisma/client": "^4.14.1",
+    "fastify": "^3.27.2",
+    "fastify-jwt": "^4.1.3",
+    "fastify-swagger": "^4.15.0",
+    "fastify-zod": "^0.0.2",
+    "tap": "^16.0.0",
+    "ts-mock-imports": "^1.3.8",
+    "tsc-watch": "^6.0.4",
+    "zod": "^3.21.4",
+    "zod-to-json-schema": "^3.21.1"
+  }
+}
